@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply m-0 min-h-screen bg-jet text-text-primary antialiased;
+    }
+}
+
+@layer components {
+    .glass-panel {
+        @apply border border-glass-border bg-glass-surface backdrop-blur-xl;
+    }
+
+    .ai-gradient-border {
+        @apply border border-cerulean/40 bg-jet;
+        box-shadow: 0 0 24px -12px rgba(255, 32, 149, 0.65);
+    }
+}
